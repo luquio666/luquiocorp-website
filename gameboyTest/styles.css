@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css?family=Creepster');
+:root {
+    --bodyback: #575757;
+    --bodyfront: #8a8a8a;
+    --screen: #49742b;
+    --black: #000000;
+    --darkgray: #2e2e2e;
+    --white: #ffffff;
+    --red: #8a1212;
+    --lightred: #973535;
+    --shadow: #0000007e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-image: linear-gradient(
+        225deg, 
+        rgb(68, 196, 255) 0%, 
+        rgb(101, 126, 255) 25%, 
+        rgb(189, 82, 228) 51%, 
+        rgb(255, 53, 188) 100%
+    );
+    animation: AnimateBG 20s ease infinite;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+
+.gameboy {
+    width: 300px;
+    height: 500px;
+    background: var(--bodyback);
+    border-radius: 20px;
+    position: relative;
+    box-shadow: -5px 25px 100px 5px var(--shadow);
+}
+
+.gameboy-front {
+    width: 300px;
+    height: 500px;
+    background: var(--bodyfront);
+    border-radius: 20px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.screenoff {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    background: var(--black);
+    position: absolute;
+    left: 25px;
+    top: 1px;
+}
+
+.screen {
+    width: 240px;
+    height: 190px;
+    border-radius: 5px;
+    background: var(--screen);
+    position: absolute;
+    left: 30px;
+    top: 5px;
+}
+
+.start {
+    width: 50px;
+    height: 15px;
+    border-radius: 15px;
+    background: var(--darkgray);
+    position: absolute;
+    top: 230px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.select {
+    width: 50px;
+    height: 15px;
+    border-radius: 15px;
+    background: var(--darkgray);
+    position: absolute;
+    top: 260px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.button-a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--red);
+    position: absolute;
+    top: 295px;
+    right: 25px;
+}
+.button-a::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--lightred);
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    margin: auto;
+}
+
+.button-b {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--red);
+    position: absolute;
+    top: 340px;
+    right: 80px;
+}
+.button-b::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--lightred);
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    margin: auto;
+}
+
+.button-ud {
+    width: 100px;
+    height: 36px;
+    border-radius: 10px;
+    background: var(--darkgray);
+    position: absolute;
+    top: 320px;
+    left: 25px;
+    margin: auto;
+}
+
+.button-lr {
+    width: 100px;
+    height: 36px;
+    border-radius: 10px;
+    background: var(--darkgray);
+    position: absolute;
+    top: 320px;
+    left: 25px;
+    margin: auto;
+    transform: rotate(90deg);
+}

@@ -5,11 +5,13 @@
     --bodyfront: #8a8a8a;
     --screen: #49742b;
     --black: #000000;
+    --lightgray: #706e6e;
     --darkgray: #2e2e2e;
     --white: #ffffff;
     --red: #8a1212;
     --lightred: #973535;
     --shadow: #0000007e;
+    --shadowdark: #000000b6;
 }
 
 * {
@@ -89,6 +91,7 @@ body {
     left: 0;
     right: 0;
     margin: auto;
+    box-shadow: 0px 2px 10px 0px var(--shadowdark);
 }
 
 .select {
@@ -101,6 +104,18 @@ body {
     left: 0;
     right: 0;
     margin: auto;
+    box-shadow: 0px 2px 10px 0px var(--shadowdark);
+}
+
+.buttonsback {
+    width: 70px;
+    height: 150px;
+    border-radius: 45px;
+    background: var(--lightgray);
+    position: absolute;
+    top: 265px;
+    right: 43px;
+    transform: rotate(45deg);
 }
 
 .button-a {
@@ -109,8 +124,9 @@ body {
     border-radius: 50%;
     background: var(--red);
     position: absolute;
-    top: 295px;
+    top: 288px;
     right: 25px;
+    box-shadow: 0px 0px 10px 0px var(--shadowdark);
 }
 .button-a::after {
     content: '';
@@ -132,6 +148,7 @@ body {
     position: absolute;
     top: 340px;
     right: 80px;
+    box-shadow: 0px 0px 10px 0px var(--shadowdark);
 }
 .button-b::after {
     content: '';
@@ -154,6 +171,7 @@ body {
     top: 320px;
     left: 25px;
     margin: auto;
+    box-shadow: 0px 2px 10px 0px var(--shadowdark);
 }
 
 .button-lr {

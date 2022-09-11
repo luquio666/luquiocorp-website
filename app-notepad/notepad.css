@@ -1,3 +1,12 @@
+:root {
+    --noteback: #533825;
+    --notebackshadow: #2e2200;
+    --notepaper: #faeba8;
+    --notepaper1: #b8ae7b;
+    --notepaper2: #d6ca8f;
+    --notelines: #7d7666;
+	--notemiddleshadow: #000000;
+}
 
 .notepad{
     display: none;
@@ -10,6 +19,7 @@
 	border-radius: 23px;
     box-shadow: -5px 25px 100px 5px var(--shadow);
 }
+
 .notepad.show {
     display: block;
 }
@@ -17,8 +27,8 @@
 .back{
 	width: 580px;
 	height: 460px;
-	box-shadow: 0px 5px 0px #2e2200;
-	background-color: #533825;
+	box-shadow: 0px 5px 0px var(--notebackshadow);
+	background-color: var(--noteback);
 	border-radius: 15px;
 }
 .paper{
@@ -26,23 +36,33 @@
 	height: 445px;
 	position: absolute;
 	top: 7px;
-	left: 15px;
-	background-color: #faeba8;
+	left: 13px;
+	background-color: var(--notepaper);
+	box-shadow: 
+	var(--notepaper1) 1.5px 0px 0px,
+	var(--notepaper2) 3px 0px 0px,
+	var(--notepaper1) 4.5px 0px 0px,
+	var(--notepaper2) 6px 0px 0px,
+	var(--notepaper1) 7.5px 0px 0px,
+	var(--notepaper2) 9px 0px 0px;
 }
+
 .middle {
 	width: 1px;
 	height: 445px;
 	position: absolute;
 	top: 0px;
 	left: 283px;
-	box-shadow: #000000 0px 0px 1px,
-	#000000 0px 0px 5px,
-	#000000 0px 0px 10px,
-	#000000 0px 0px 15px,
-	#000000 0px 0px 20px,
-	#000000 0px 0px 25px,
-	#000000 0px 0px 30px 3px;
+	box-shadow: 
+	var(--notemiddleshadow) 0px 0px 1px,
+	var(--notemiddleshadow) 0px 0px 5px,
+	var(--notemiddleshadow) 0px 0px 10px,
+	var(--notemiddleshadow) 0px 0px 15px,
+	var(--notemiddleshadow) 0px 0px 20px,
+	var(--notemiddleshadow) 0px 0px 25px,
+	var(--notemiddleshadow) 0px 0px 30px 3px;
 }
+
 .lines{
 	width: 530px;
 	height: 1px;
@@ -50,20 +70,21 @@
 	z-index: 3;
 	top: 20px;
 	left: 10px;
-	box-shadow: #7d7666 0px 25px 0px,
-	#7d7666 0px 50px 0px,
-	#7d7666 0px 75px 0px,
-	#7d7666 0px 100px 0px,
-	#7d7666 0px 125px 0px,
-	#7d7666 0px 150px 0px,
-	#7d7666 0px 175px 0px,
-	#7d7666 0px 200px 0px,
-	#7d7666 0px 225px 0px,
-	#7d7666 0px 250px 0px,
-	#7d7666 0px 275px 0px,
-	#7d7666 0px 300px 0px,
-	#7d7666 0px 325px 0px,
-	#7d7666 0px 350px 0px,
-	#7d7666 0px 375px 0px,
-	#7d7666 0px 400px 0px;
+	box-shadow: 
+	var(--notelines) 0px 25px 0px,
+	var(--notelines) 0px 50px 0px,
+	var(--notelines) 0px 75px 0px,
+	var(--notelines) 0px 100px 0px,
+	var(--notelines) 0px 125px 0px,
+	var(--notelines) 0px 150px 0px,
+	var(--notelines) 0px 175px 0px,
+	var(--notelines) 0px 200px 0px,
+	var(--notelines) 0px 225px 0px,
+	var(--notelines) 0px 250px 0px,
+	var(--notelines) 0px 275px 0px,
+	var(--notelines) 0px 300px 0px,
+	var(--notelines) 0px 325px 0px,
+	var(--notelines) 0px 350px 0px,
+	var(--notelines) 0px 375px 0px,
+	var(--notelines) 0px 400px 0px;
 }

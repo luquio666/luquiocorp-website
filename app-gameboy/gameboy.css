@@ -105,8 +105,7 @@
     right: 25px;
     box-shadow: 0px 0px 10px 0px var(--shadowdark);
 }
-.button-a::after {
-    content: '';
+.button-a-front {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -115,6 +114,10 @@
     bottom: 5px;
     right: 0;
     margin: auto;
+}
+
+.button-a-front:active {
+    transform: translateY(2px) rotateX(10deg);
 }
 
 .button-b {    
@@ -127,8 +130,7 @@
     right: 80px;
     box-shadow: 0px 0px 10px 0px var(--shadowdark);
 }
-.button-b::after {
-    content: '';
+.button-b-front {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -137,6 +139,20 @@
     bottom: 5px;
     right: 0;
     margin: auto;
+}
+
+.button-b-front:active {
+    transform: translateY(2px) rotateX(10deg);
+}
+
+.buttonsback-dpad {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background: var(--lightgray);
+    position: absolute;
+    top: 275px;
+    left: 12px;
 }
 
 .button-ud {
@@ -161,4 +177,60 @@
     left: 25px;
     margin: auto;
     transform: rotate(90deg);
+}
+
+.speaker {
+	width: 8px;
+	height: 8px;
+    border-radius: 50%;
+	position: absolute;
+	z-index: 3;
+	top: 410px;
+	left: 22px;
+	box-shadow:
+    /* top dots */
+    var(--darkgray) 0px 25px 0px,
+    var(--darkgray) 25px 25px 0px,
+    var(--darkgray) 50px 25px 0px,
+    var(--darkgray) 75px 25px 0px,
+    var(--darkgray) 100px 25px 0px,
+    var(--darkgray) 125px 25px 0px,
+    var(--darkgray) 150px 25px 0px,
+    var(--darkgray) 175px 25px 0px,
+    var(--darkgray) 200px 25px 0px,
+    var(--darkgray) 225px 25px 0px,
+	var(--darkgray) 250px 25px 0px,
+    /* middle dots */
+    var(--darkgray) 12.5px 35px 0px,
+    var(--darkgray) 37.5px 35px 0px,
+    var(--darkgray) 62.5px 35px 0px,
+    var(--darkgray) 87.5px 35px 0px,
+    var(--darkgray) 112.5px 35px 0px,
+    var(--darkgray) 137.5px 35px 0px,
+    var(--darkgray) 162.5px 35px 0px,
+    var(--darkgray) 187.5px 35px 0px,
+    var(--darkgray) 212.5px 35px 0px,
+    var(--darkgray) 237.5px 35px 0px,
+    /* bottom dots */
+    var(--darkgray) 0px 45px 0px,
+    var(--darkgray) 25px 45px 0px,
+    var(--darkgray) 50px 45px 0px,
+    var(--darkgray) 75px 45px 0px,
+    var(--darkgray) 100px 45px 0px,
+    var(--darkgray) 125px 45px 0px,
+    var(--darkgray) 150px 45px 0px,
+    var(--darkgray) 175px 45px 0px,
+    var(--darkgray) 200px 45px 0px,
+    var(--darkgray) 225px 45px 0px,
+	var(--darkgray) 250px 45px 0px;
+}
+
+.charge-port {
+    width: 100px;
+    height: 8px;
+    border-radius: 10px;
+    background: var(--darkgray);
+    position: absolute;
+    top: 486px;
+    left: 98px;
 }

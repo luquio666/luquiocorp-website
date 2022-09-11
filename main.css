@@ -18,7 +18,7 @@ body {
         rgb(255, 53, 188) 100%
     );
     background-size: 200% 200%;
-    animation: AnimateBG 10s ease infinite;
+    animation: AnimateBG 25s ease infinite;
     height: 100%;
     align-items: center;
     justify-content: space-around;
@@ -53,6 +53,9 @@ body {
     height: 400px;
 }
 
+.topBar {
+    opacity: 1;
+}
 
 .bottomBar {
     display: flex;

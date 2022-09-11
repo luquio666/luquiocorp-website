@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./app-gameboy/gameboy.css">
+    <link rel="stylesheet" href="./app-notepad/notepad.css">
+    <title>luquiocorp O.S. v.001</title>
+</head>
+<body>
+    <div class="master">
+        
+        <div class="bottomBar">
+            <div onclick="onDivClick('textWindow')"></div>
+            <div onclick="onDivClick('gameboy')"></div>
+            <div onclick="onDivClick('notepad')"></div>
+            <div onclick="onDivClick()"></div>
+            <div onclick="onDivClick()"></div>
+            <div onclick="onDivClick()"></div>
+            <div onclick="onDivClick()"></div>
+        </div>
+
+        <div class="window" id="textWindow">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reiciendis in eum delectus ea non ratione excepturi doloribus? P
+            raesentium sit, soluta cum cupiditate corporis maxime repellendus numq
+            uam laborum id iusto aspernatur?
+        </div>
+
+        <div class="gameboy" id="gameboy">
+            <div class="gameboy-front"></div>
+            <div class="screenoff"></div>
+            <div class="screen" id="gameboyScreen"></div>
+            <div class="start"></div>
+            <div class="start-2"></div>
+            <div class="select"></div>
+            <div class="buttonsback"></div>
+            <div class="button-a"></div>
+            <div class="button-b"></div>
+            <div class="button-ud"></div>
+            <div class="button-lr"></div>
+        </div>
+
+        <div class="notepad" id="notepad">
+            <div class="paper">
+                <div class="lines"></div>
+                <div class="middle"></div>
+            </div>
+            <div class="back"></div>
+        </div>
+
+    </div>
+    <script src="./main.js"></script>
+    <script src="./app-gameboy/gameboy.js"></script>
+</body>
+</html>

@@ -7,7 +7,7 @@ function loadCanvas(id) {
     canvas.height = 190;
     return canvas;
 }
-var canvas = loadCanvas("screen");
+var canvas = loadCanvas("gameboyScreen");
 var width = canvas.width,
     height = canvas.height,
     cx = null,

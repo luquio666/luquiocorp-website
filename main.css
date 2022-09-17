@@ -26,9 +26,9 @@ body {
 }
 
 @keyframes AnimateBG { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0%{background-position:0% 80%}
+    50%{background-position:100% 80%}
+    100%{background-position:0% 80%}
 }
 
 .master > div:not(.bottomBar) {
@@ -38,19 +38,6 @@ body {
 
 .master > div.show {
     opacity: 1;
-}
-
-.window {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid black;
-    border-radius: 10px;
-    z-index: 1;
-    background-color: white;
-    width: 400px;
-    height: 400px;
 }
 
 .topBar {
@@ -72,14 +59,13 @@ body {
     transform: translate(-50%);
 }
 
-.bottomBar div{
+/* .bottomBar div{
     height: 80px;
     cursor: pointer;
     width: 80px;
     margin: 0 1rem;
     border-radius: 20%;
-    background-color: rgb(255, 255, 255);
-}
+} */
 
 .bottomBar div:hover {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.473);
@@ -96,4 +82,4 @@ body {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.473);
     transition: .015s;
     transform: translateY(0) rotateX(0);
-}
+} 

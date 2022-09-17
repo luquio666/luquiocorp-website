@@ -1,0 +1,80 @@
+#icons {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%, -50%);
+    
+    z-index: 3;
+}
+
+
+.helloIcon {
+    height: 80px;
+    cursor: pointer;
+    width: 80px;
+    margin: 0 1rem;
+    border-radius: 20%;
+    background-color: rgba(158, 238, 84, 0);
+}
+
+
+.portfolioIcon {
+    height: 80px;
+    cursor: pointer;
+    width: 80px;
+    margin: 0 1rem;
+    border-radius: 20%;
+    background-color: rgba(158, 238, 84, 0);
+}
+
+
+.gameboyIcon {
+    height: 80px;
+    cursor: pointer;
+    width: 80px;
+    margin: 0 1rem;
+    border-radius: 20%;
+    background-color: rgba(158, 238, 84, 0);
+}
+
+
+.notepadIcon {
+    height: 80px;
+    cursor: pointer;
+    width: 80px;
+    margin: 0 1rem;
+    border-radius: 20%;
+    background-color: rgba(158, 238, 84, 0);
+}
+
+
+.musicIcon {
+    height: 80px;
+    cursor: pointer;
+    width: 80px;
+    margin: 0 1rem;
+    border-radius: 20%;
+    background-color: rgba(158, 238, 84, 0);
+}
+
+
+.robotIcon {
+    height: 80px;
+    cursor: pointer;
+    width: 80px;
+    margin: 0 1rem;
+    border-radius: 20%;
+    background-color: rgba(158, 238, 84, 0);
+}
+
+
+.contactIcon {
+    height: 80px;
+    cursor: pointer;
+    width: 80px;
+    margin: 0 1rem;
+    border-radius: 20%;
+    background-color: rgba(158, 238, 84, 0);
+}

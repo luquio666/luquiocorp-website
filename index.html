@@ -5,8 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./icons.css">
+    <link rel="stylesheet" href="./app-hello/hello.css">
+    <link rel="stylesheet" href="./app-portfolio/portfolio.css">
     <link rel="stylesheet" href="./app-gameboy/gameboy.css">
     <link rel="stylesheet" href="./app-notepad/notepad.css">
+    <link rel="stylesheet" href="./app-music/music.css">
+    <link rel="stylesheet" href="./app-robot/robot.css">
+    <link rel="stylesheet" href="./app-contact/contact.css">
     <title>luquiocorp O.S. v.001</title>
 </head>
 <body>
@@ -15,20 +21,35 @@
         <div class="topBar"></div>
 
         <div class="bottomBar">
-            <div onclick="onDivClick('textWindow')"></div>
-            <div onclick="onDivClick('gameboy')"></div>
-            <div onclick="onDivClick('notepad')"></div>
-            <div onclick="onDivClick()"></div>
-            <div onclick="onDivClick()"></div>
-            <div onclick="onDivClick()"></div>
-            <div onclick="onDivClick()"></div>
+            <div class="helloIcon" onclick="onDivClick('hello')">
+                <img src="./icons/helloIcon.png" alt="" id="icons">
+            </div>
+            <div class="portfolioIcon" onclick="onDivClick('portfolio')">
+                <img src="./icons/portfolioIcon.png" alt="" id="icons">
+            </div>
+            <div class="gameboyIcon" onclick="onDivClick('gameboy')">
+                <img src="./icons/gameboyIcon.png" alt="" id="icons">
+            </div>
+            <div class="notepadIcon" onclick="onDivClick('notepad')">
+                <img src="./icons/notepadIcon.png" alt="" id="icons">
+            </div>
+            <div class="musicIcon" onclick="onDivClick('music')">
+                <img src="./icons/musicIcon.png" alt="" id="icons">
+            </div>
+            <div class="robotIcon" onclick="onDivClick('robot')">
+                <img src="./icons/robotIcon.png" alt="" id="icons">
+            </div>
+            <div class="contactIcon" onclick="onDivClick('contact')">
+                <img src="./icons/contactIcon.png" alt="" id="icons">
+            </div>
         </div>
 
-        <div class="window" id="textWindow">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reiciendis in eum delectus ea non ratione excepturi doloribus? P
-            raesentium sit, soluta cum cupiditate corporis maxime repellendus numq
-            uam laborum id iusto aspernatur?
+        <div class="hello" id="hello">
+            Hello world!
+        </div>
+
+        <div class="portfolio" id="portfolio">
+            what a porfolio my gosh!
         </div>
 
         <div class="gameboy" id="gameboy">
@@ -60,8 +81,26 @@
             <div class="back"></div>
         </div>
 
+        <div class="music" id="music">
+            music to die for!
+        </div>
+
+        <div class="robot" id="robot">
+            robot, beep beep!
+        </div>
+
+        <div class="contact" id="contact">
+            contact here at com.google@luq.notperfect
+        </div>
+
     </div>
     <script src="./main.js"></script>
+    <script src="./app-hello/hello.js"></script>
+    <script src="./app-portfolio/portfolio.js"></script>
     <script src="./app-gameboy/gameboy.js"></script>
+    <script src="./app-notepad/notepad.js"></script>
+    <script src="./app-music/music.js"></script>
+    <script src="./app-robot/robot.js"></script>
+    <script src="./app-contact/contact.js"></script>
 </body>
 </html>

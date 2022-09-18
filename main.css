@@ -31,7 +31,7 @@ body {
     100%{background-position:0% 80%}
 }
 
-.master > div:not(.bottomBar) {
+.master > div:not(.bottomBar, .topBar) {
     opacity: 0;
     transition: opacity 150ms ease;
 }
@@ -41,7 +41,14 @@ body {
 }
 
 .topBar {
-    opacity: 1;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%);
 }
 
 .bottomBar {

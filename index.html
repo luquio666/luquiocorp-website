@@ -6,23 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./icons.css">
-    <link rel="stylesheet" href="./app-hello/hello.css">
+    <link rel="stylesheet" href="./app-terminal/terminal.css">
     <link rel="stylesheet" href="./app-portfolio/portfolio.css">
     <link rel="stylesheet" href="./app-gameboy/gameboy.css">
     <link rel="stylesheet" href="./app-notepad/notepad.css">
     <link rel="stylesheet" href="./app-music/music.css">
     <link rel="stylesheet" href="./app-robot/robot.css">
     <link rel="stylesheet" href="./app-contact/contact.css">
-    <title>luquiocorp O.S. v.001</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <title>luquiocorp O.S. v0.1</title>
 </head>
-<body>
+<body onload="init()">
+    
     <div class="master">
         
-        <div class="topBar"></div>
+        <div class="topBar" id="topBar">
+            <img src="./icons/luki-os.png">
+            <div class="topBar-left" id="topBar-left"></div>
+            <div class="topBar-right" id="topBar-right"></div>
+        </div>
 
         <div class="bottomBar">
-            <div class="helloIcon" onclick="onDivClick('hello')">
-                <img src="./icons/helloIcon.png" alt="" id="icons">
+            <div class="helloIcon" onclick="onDivClick('terminal')">
+                <img src="./icons/terminalIcon.png" alt="" id="icons">
             </div>
             <div class="portfolioIcon" onclick="onDivClick('portfolio')">
                 <img src="./icons/portfolioIcon.png" alt="" id="icons">
@@ -44,9 +51,14 @@
             </div>
         </div>
 
-        <div class="hello" id="hello">
-            Hello world!
-        </div>
+        <div class="terminal" id="terminal">
+            <div class="terminal-inner">
+                <div class="terminal-screen">
+                    <textarea class="terminal-textarea">>hello_</textarea>
+                </div>
+            </div>   
+            <div class="terminal-redlight"></div>
+        </div> 
 
         <div class="portfolio" id="portfolio">
             what a porfolio my gosh!
@@ -95,7 +107,7 @@
 
     </div>
     <script src="./main.js"></script>
-    <script src="./app-hello/hello.js"></script>
+    <script src="./app-terminal/terminal.js"></script>
     <script src="./app-portfolio/portfolio.js"></script>
     <script src="./app-gameboy/gameboy.js"></script>
     <script src="./app-notepad/notepad.js"></script>
